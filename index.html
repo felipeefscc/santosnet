@@ -1,126 +1,179 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg" href="./img/logo.png"  width="10" >
-    <link rel="stylesheet" href="./css/styles.css">
-
-    <title>Cadastro | Santos.Net</title>
+    <title>SantosNET | 100% Fibra optica</title>
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-    <script src="./js/script.js"></script>
-
-    <div class="container">
-        <div class="form-image">
-            <img src="./img/logo.png" alt="">
-        </div>
-        <div class="form">
-            <form autocomplete="off">
-                <div class="form-header">
-                    <div class="title">
-                        <h1>Painel de Cadastro</h1>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <div class="input-box">
-                        <label for="nome">Nome Completo:</label>
-                        <input id="nome" type="text" name="nome" placeholder="Digite seu nome completo" >
-                    </div>
-
-                    <div class="input-box">
-                        <label for="cpf">CPF:</label>
-                        <input id="cpf" type="text" name="cpf" maxlength="11" placeholder="Digite seu CPF." oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" >
-                    </div>
-
-                    <div class="input-box">
-                        <label for="email">Email:</label>
-                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" >
-                    </div>
-
-                    <div class="input-box">
-                        <label for="telefone">Telefone:</label>
-                        <input id="telefone" type="text" name="telefone" maxlength="13" placeholder="(xx) xxxx-xxxx" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" >
-                    </div>
-                    <br>
-                    <br>
-                    <br>    
-                    <div class="input-box">
-                        <label for="celular">Data de Nascimento:</label>
-                        <input id="date" type="date" name="date" placeholder="(xx) xxxx-xxxx" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" >
-                    </div>
-
-                    <div class="input-box">
-                        <label for="endereco">Endereço:</label>
-                        <input id="endereco" type="text" name="endereco" placeholder="Digite seu endereço" >
-                    </div>
-
-                    <div class="input-box">
-                        <label for="bairro">Bairro:</label>
-                        <input id="bairro" type="text" name="bairro" placeholder="Digite seu bairro" >
-                    </div>
-
-                    <div class="input-box">
-                        <label for="cep">Cep:</label>
-                        <input id="cep" type="text" name="cep" maxlength="8" placeholder="Digite seu cep" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" >
-                    </div>
-
-                    <div class="input-box">
-                        <label for="numero">Número:</label>
-                        <input id="numero" type="text" name="numero" placeholder="Digite o número da casa" >
-                    </div>
-
-                    <div class="input-box">
-                        <label for="complemento">Complemento:</label>
-                        <input id="complemento" type="text" name="complemento" placeholder="Digite seu complemento" >
-                    </div>
-
-                    <div class="input-box">
-                        <label for="vencimento""><b>Data de Vencimento:</b></label>
-                        <select id="vencimento" name="vencimento">
-                            <option value="05">Dia - 05</option>
-                            <option value="10">Dia - 10</option>
-                            <option value="15">Dia - 15</option>
-                            <option value="20">Dia - 20</option>
-                            <option value="25">Dia - 25</option>
-                            <option value="30">Dia - 30</option>
-                        </select>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="planos"><b>Planos Fibra Optica:</b></label>
-                        <select id="planos" name="planos">
-                            <option value="20MB">20MB - R$49,90</option>
-                            <option value="35MB">35MB - R$59,90</option>
-                            <option value="50MB">50MB - R$69,90</option>
-                            <option value="100MB">100MB - R$79,90</option>
-                            <option value="300MB">300MB - R$99,90</option>
-                            <option value="500MB">500MB - R$129,90</option>
-                        </select>
-                     </div>
-                     
-                </div>
-
-                <br>
-                <br>
-
-                <div class="confirm-button">
-                    <input type="submit" name="submit"  id="submit" value="Cadastrar" onclick="sendwpp();funcao1()" />
-                </div>
-            </form>
+    <div class="scroll-up-btn">
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </div>
+    <div class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Santos<span>Net</span></a></div>
+            <ul class="menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Planos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="menu-btn">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
         </div>
     </div>
 
-    <script>
-        function funcao1()
-            {
-        alert("Dados enviados com sucesso!");
-            }
-    </script>
+    <!--home inicio-->
+    <section class="home" id="home" style="background: url(./Image/banner3.jpg) no-repeat;" >
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">A melhor conexão da região</div>
+                <div class="text-2">100% Fibra Optica</div>
+                <div class="text-3">Planos: <span class="typing"></span></div>
+                <a href="#">Adquira já!</a>
+            </div>
+        </div>
+    </section>
+
+    <!--sessão sobre-->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">Sobre</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="./Image/img-4.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">Santos Net <span class="typing-2"></span></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsa nobis assumenda, maxime illo soluta repellendus atque iusto officiis architecto sequi hic possimus qui similique? Rem impedit dolorum esse perspiciatis.</p>
+                    <a href="#">Contate-me!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!--sessão serviços-->
+     <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">Serviços</h2>
+            <div class="serv-content">
+               <div class="card">
+                   <div class="box">
+                    <ion-icon name="arrow-up-outline"></ion-icon>
+                    <ion-icon name="arrow-down-outline"></ion-icon>
+                    <div class="text">50MB - R$59,90</div>
+                    <p>100% Fibra Optica</p>
+                    <p>Super Wi-Fi Grátis</p>
+                    <p>Download: 50mb</p>
+                    <p>Upload: 50mb</p>
+                   </div>
+               </div>
+
+               <div class="card">
+                <div class="box">
+                    <ion-icon name="arrow-up-outline"></ion-icon>
+                    <ion-icon name="arrow-down-outline"></ion-icon>
+                 <div class="text">50MB - R$59,90</div>
+                 <p>100% Fibra Optica</p>
+                    <p>Super Wi-Fi Grátis</p>
+                    <p>Download: 50mb</p>
+                    <p>Upload: 50mb</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="box">
+                    <ion-icon name="arrow-up-outline"></ion-icon>
+                    <ion-icon name="arrow-down-outline"></ion-icon>
+                 <div class="text">50MB - R$59,90</div>
+                 <p>100% Fibra Optica</p>
+                 <p>Super Wi-Fi Grátis</p>
+                 <p>Download: 50mb</p>
+                 <p>Upload: 50mb</p>
+                 </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Sessão contato-->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contato</h2>
+            <div class="contact-content">
+               <div class="column left">
+                   <div class="text">Fale Conosco</div>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum id deleniti omnis dolorum quidem impedit reprehenderit, temporibus nostrum modi. Praesentium cupiditate qui, sit aliquam deserunt nobis? Voluptate esse accusamus exercitationem!</p>
+               
+               <div class="icons">
+                   <div class="row">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <div class="info">
+                            <div class="head">Nome</div>
+                            <div class="sub-title">SantosNet</div>
+                        </div>
+                   </div>
+                   <div class="row">
+                    <ion-icon name="earth-outline"></ion-icon>
+                    <div class="info">
+                        <div class="head">Endereço</div>
+                        <div class="sub-title">Sussuarana</div>
+                    </div>
+               </div>
+               <div class="row">
+                <ion-icon name="person-outline"></ion-icon>
+                <div class="info">
+                    <div class="head">Email</div>
+                    <div class="sub-title">email@gmail.com</div>
+                </div>
+           </div>
+               </div>
+            </div><!--column left-->
+            <div class="column rigth">
+                <div class="text">Mensagem</div>
+                <form action="#">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" placeholder="Nome" required>
+                        </div>
+                        <div class="field email">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="field">
+                            <input type="text" placeholder="Sobrenome" required>
+                        </div>
+                        <div class="field textarea">
+                           <textarea  cols="30" rows="10" placeholder="Escrever...." required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!--sessão  footer-->
+    <footer>
+        <span>Criado por <a href="https://www.instagram.com/_fecoosta/">Felipe Costa</a> | Todos os direitos reservado 2022</span>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
 </body>
 </html>
